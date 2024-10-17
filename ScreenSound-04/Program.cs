@@ -6,9 +6,9 @@ public class Program
     public static async Task Main(string[] args)
     {
 
-        //await new Exercicio1().API();
+        await new Exercicio1().API();
         //new Exercicio2();
         //new Exercicio3();
-        new Exercicio4();
+        //new Exercicio4();
     }
 }

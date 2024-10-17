@@ -16,7 +16,7 @@ namespace ScreenSound_04.Exercicio.IntegrandoUmaAPIExterna
         {
             try
             {
-                Produto produto = null;
+                Produto produto = new Produto();
                 produto.QtdProduto();
             }
             catch (NullReferenceException ex)
