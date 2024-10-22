@@ -1,6 +1,6 @@
 namespace ScreenSound_04.Exercicio.LinqEOrdenacao
 {
-    public interface Exercicios
+    public interface IExercicios
     {
         Task Executar();
     }

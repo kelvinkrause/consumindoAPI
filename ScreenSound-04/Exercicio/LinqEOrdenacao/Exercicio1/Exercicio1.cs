@@ -3,7 +3,7 @@ using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1.Modelos;
 
 namespace ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1
 {
-    public class Exercicio1
+    public class Exercicio1 : IExercicios
     {
         public async Task Executar()
         {
