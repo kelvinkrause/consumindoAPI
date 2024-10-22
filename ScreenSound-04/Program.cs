@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
-using ScreenSound_04.Exercicio;
-using ScreenSound_04.Exercicio.IntegrandoUmaAPIExterna;
+using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1;
+using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1.Modelos;
 using ScreenSound_04.Musica;
 
 public class Program
@@ -10,13 +10,7 @@ public class Program
 
     public static async Task Main(string[] args)
     {
-        await APIMusicas();
-
-        //await new Exercicio1().API();
-        //new Exercicio2();
-        //new Exercicio3();
-        //new Exercicio4();
-
+        await new Exercicio1().Executar();
     }
 
     static async Task APIMusicas()
@@ -42,4 +36,22 @@ public class Program
             }
         }
     }
+            static async Task<List<Filme>> APIFilme()
+        {
+            try
+            {
+                using(HttpClient client = new HttpClient())
+                {
+                    string response = await client
+                        .GetStringAsync("https://raw.githubusercontent.com/ArthurOcFernandes/Exerc-cios-C-/curso-4-aula-2/Jsons/TopMovies.json");
+                    
+                    return JsonSerializer.Deserialize<List<Filme>>(response)!;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Algum erro ocorreu: " + ex.Message);
+                return null!;
+            }
+        }
 }
