@@ -3,6 +3,7 @@ using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1;
 using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1.Modelos;
 using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio2;
 using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio3;
+using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos;
 using ScreenSound_04.Musica;
 
 public class Program
@@ -14,7 +15,8 @@ public class Program
     {
         //await new Exercicio1().Executar();
         //await new Exercicio2().Executar();
-        await new Exercicio3().Executar();
+        //await new Exercicio3().Executar();
+        await new Exercicio4().Executar();
     }
 
     static async Task APIMusicas()
