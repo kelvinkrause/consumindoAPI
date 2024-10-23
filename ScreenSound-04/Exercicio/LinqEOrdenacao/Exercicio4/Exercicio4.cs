@@ -1,7 +1,7 @@
-
 using System.Text.Json;
+using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos;
 
-namespace ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos
+namespace ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4
 {
     public class Exercicio4 : IExercicios
     {

@@ -1,5 +1,7 @@
 ﻿using System.Text.Json;
 using ScreenSound_04.Exercicio.Linq.Exercicio4;
+using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4;
+using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos;
 using ScreenSound_04.Filtros;
 using ScreenSound_04.Modelos;
 
@@ -19,7 +21,6 @@ public class Program
         //await Exercicio2.Exercicio();
         //Exercicio3.Exercicio();
         //Exercicio4.Exercicio();
-
 
         //await APIMusicas();
 
