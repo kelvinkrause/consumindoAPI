@@ -1,10 +1,7 @@
 ﻿using System.Text.Json;
-using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1;
-using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio1.Modelos;
-using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio2;
-using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio3;
-using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos;
-using ScreenSound_04.Musica;
+using ScreenSound_04.Exercicio.Linq.Exercicio4;
+using ScreenSound_04.Filtros;
+using ScreenSound_04.Modelos;
 
 public class Program
 {
@@ -16,7 +13,16 @@ public class Program
         //await new Exercicio1().Executar();
         //await new Exercicio2().Executar();
         //await new Exercicio3().Executar();
-        await new Exercicio4().Executar();
+        //await new Exercicio4().Executar();
+        
+        //Exercicio1.Exercicio();
+        //await Exercicio2.Exercicio();
+        //Exercicio3.Exercicio();
+        //Exercicio4.Exercicio();
+
+
+        //await APIMusicas();
+
     }
 
     static async Task APIMusicas()
@@ -30,10 +36,13 @@ public class Program
                 
                 //Deserialização da API de Musicas em uma Classe 
                 var musicas = JsonSerializer.Deserialize<List<Musica>>(response)!;
-                Console.WriteLine(musicas.Count);
 
-                musicas[0].ExibeInformacoesMusica();
+                //musicas[0].ExibeInformacoesMusica();
 
+                //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
+                //LinqOrder.ExibirListaDeArtistasOrdenados(musicas);
+                //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "Dance/Electronic");
+                LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
 
             }
             catch (Exception ex)
@@ -42,22 +51,4 @@ public class Program
             }
         }
     }
-            static async Task<List<Filme>> APIFilme()
-        {
-            try
-            {
-                using(HttpClient client = new HttpClient())
-                {
-                    string response = await client
-                        .GetStringAsync("https://raw.githubusercontent.com/ArthurOcFernandes/Exerc-cios-C-/curso-4-aula-2/Jsons/TopMovies.json");
-                    
-                    return JsonSerializer.Deserialize<List<Filme>>(response)!;
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Algum erro ocorreu: " + ex.Message);
-                return null!;
-            }
-        }
 }
