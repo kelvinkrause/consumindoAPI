@@ -22,7 +22,7 @@ public class LinqFilter
 
     public static void FiltrarMusicasDeUmArtista(List<Musica> musicas, string artista)
     {
-        var musicasDoArtista = musicas.Where(musica => musica.Artista!.ToUpper().Equals(artista.ToUpper())).ToList();
+        var musicasDoArtista = musicas.Where(musica => musica.Artista!.ToUpper().Equals(artista.ToUpper())).Distinct().ToList();
         Console.WriteLine($"Musicas do Artista {artista}");
         musicasDoArtista.ForEach(musica => Console.WriteLine($" - {musica.Nome}"));
     }

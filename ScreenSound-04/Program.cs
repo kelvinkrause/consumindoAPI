@@ -40,11 +40,17 @@ public class Program
 
                 //musicas[0].ExibeInformacoesMusica();
 
+                //ExibirTodasMusicas(musicas);
+
                 //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
                 //LinqOrder.ExibirListaDeArtistasOrdenados(musicas);
                 //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "Dance/Electronic");
-                //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
-                LinqFilter.FiltrarTodasAsMusicasPorAno(musicas, "2010");
+                LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
+                //LinqFilter.FiltrarTodasAsMusicasPorAno(musicas, "2010");
+
+                //var MusicasFavoritasKelvin = new MusicasFavoritas("Kelvin");
+
+
 
             }
             catch (Exception ex)
@@ -52,5 +58,15 @@ public class Program
                 Console.WriteLine("ERRO: " + ex.Message);
             }
         }
+    }
+
+    static void ExibirTodasMusicas(List<Musica> musicas)
+    {
+        int index = 0;
+        musicas.ForEach(musica => 
+            {
+                Console.WriteLine($"{index} -> {musica.Nome}");
+                index++;
+            });        
     }
 }
