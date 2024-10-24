@@ -45,10 +45,12 @@ public class Program
                 //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
                 //LinqOrder.ExibirListaDeArtistasOrdenados(musicas);
                 //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "Dance/Electronic");
-                LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
+                //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
                 //LinqFilter.FiltrarTodasAsMusicasPorAno(musicas, "2010");
+                LinqFilter.FiltrarMusicasDeUmArtistaComIndice(musicas, "The Neighbourhood");
 
                 //var MusicasFavoritasKelvin = new MusicasFavoritas("Kelvin");
+
 
 
 

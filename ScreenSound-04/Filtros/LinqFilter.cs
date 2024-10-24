@@ -40,4 +40,16 @@ public class LinqFilter
         musicasPorAno.ForEach(musica => Console.WriteLine($" - {musica}"));
     }
 
+    public static void FiltrarMusicasDeUmArtistaComIndice(List<Musica> musicas, string artista)
+    {
+        Console.WriteLine($"Musicas do Artista {artista}");
+        for (int i = 0; i < musicas.Count; i++)
+        {
+            if (musicas[i].Artista!.Equals(artista))
+            {
+                Console.WriteLine($" {i} -> {musicas[i].Nome}");
+            }
+        }
+    }
+
 }
