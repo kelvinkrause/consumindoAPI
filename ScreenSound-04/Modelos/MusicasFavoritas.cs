@@ -18,7 +18,7 @@ public class MusicasFavoritas
     public void ExibirMusicasFavoritas()
     {
         Console.WriteLine($"Essas são as musicas favoritas -> {Nome}");
-        ListMusicasfavoritas.ForEach(musica => Console.WriteLine($"= {musica.Nome} de {musica.Artista}"));
+        ListMusicasfavoritas.ForEach(musica => Console.WriteLine($" > {musica.Nome} de {musica.Artista}"));
     }
 
 }

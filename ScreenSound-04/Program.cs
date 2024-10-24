@@ -49,10 +49,12 @@ public class Program
                 //LinqFilter.FiltrarTodasAsMusicasPorAno(musicas, "2010");
                 LinqFilter.FiltrarMusicasDeUmArtistaComIndice(musicas, "The Neighbourhood");
 
-                //var MusicasFavoritasKelvin = new MusicasFavoritas("Kelvin");
+                var musicasFavoritasKelvin = new MusicasFavoritas("Kelvin");
 
+                musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[365]);
+                musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[1623]);      
 
-
+                musicasFavoritasKelvin.ExibirMusicasFavoritas();
 
             }
             catch (Exception ex)
