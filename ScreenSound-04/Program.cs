@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio4;
+using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio5;
 using ScreenSound_04.Filtros;
 using ScreenSound_04.Modelos;
 
@@ -10,20 +11,24 @@ public class Program
 
     public static async Task Main(string[] args)
     {
+        //IntegrandoUmaAPIExterna
         //await new Exercicio1().Executar();
         //await new Exercicio2().Executar();
         //await new Exercicio3().Executar();
         //await new Exercicio4().Executar();
         
+        //LinqEOrdenacao
         //Exercicio1.Exercicio();
         //await Exercicio2.Exercicio();
         //Exercicio3.Exercicio();
         //Exercicio4.Exercicio();
         
+        //CriandoCaminhoComCSharp
         //Exercicio1.Executar();
         //Exercicio2.Executar();
         //new Exercicio3().Executar();
-        Exercicio4.Executar();
+        //Exercicio4.Executar();
+        new Exercicio5().Executar();
 
         //await APIMusicas();
 
