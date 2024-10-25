@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio1;
 using ScreenSound_04.Exercicio.Linq.Exercicio4;
 using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4;
 using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos;
@@ -21,8 +22,10 @@ public class Program
         //await Exercicio2.Exercicio();
         //Exercicio3.Exercicio();
         //Exercicio4.Exercicio();
+        
+        Exercicio1.Executar();
 
-        await APIMusicas();
+        //await APIMusicas();
 
     }
 
@@ -59,8 +62,8 @@ public class Program
 
                 musicasFavoritasKelvin.ExibirMusicasFavoritas();
 
-                //musicasFavoritasKelvin.GerarArquivoJson();
-                musicasFavoritasKelvin.GerarArquivoJsonComStream();
+                musicasFavoritasKelvin.GerarArquivoJson();
+                //musicasFavoritasKelvin.GerarArquivoJsonComStream();
 
             }
             catch (Exception ex)
