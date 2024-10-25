@@ -59,7 +59,8 @@ public class Program
 
                 musicasFavoritasKelvin.ExibirMusicasFavoritas();
 
-                musicasFavoritasKelvin.GerarArquivoJson();
+                //musicasFavoritasKelvin.GerarArquivoJson();
+                musicasFavoritasKelvin.GerarArquivoJsonComStream();
 
             }
             catch (Exception ex)

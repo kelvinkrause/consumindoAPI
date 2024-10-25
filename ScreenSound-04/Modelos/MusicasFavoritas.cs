@@ -38,4 +38,17 @@ public class MusicasFavoritas
         Console.WriteLine($"Arquivo Json foi criado com sucesso. {Path.GetFullPath(nomeDoArquivo)}");
     }
 
+    public void GerarArquivoJsonComStream()
+    {
+        string nomeDoArquivo = $"F:\\musicas-favoritas-do-{Nome}.json";
+        using (StreamWriter arquivo = new StreamWriter(nomeDoArquivo))
+        {
+            Console.WriteLine($"Musicas Favoritas do {Nome}");
+            ListMusicasfavoritas
+                .ForEach(musica => arquivo.WriteLine($"{musica.Nome}, {musica.Artista}"));
+            arquivo.Close();
+        }
+        Console.WriteLine($"Arquivo Json foi criado com sucesso. {Path.GetFullPath(nomeDoArquivo)}");
+    }
+
 }
