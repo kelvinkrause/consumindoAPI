@@ -47,14 +47,19 @@ public class Program
                 //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "Dance/Electronic");
                 //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
                 //LinqFilter.FiltrarTodasAsMusicasPorAno(musicas, "2010");
-                LinqFilter.FiltrarMusicasDeUmArtistaComIndice(musicas, "The Neighbourhood");
+                LinqFilter.FiltrarMusicasDeUmArtistaComIndice(musicas, "Arctic Monkeys");
 
                 var musicasFavoritasKelvin = new MusicasFavoritas("Kelvin");
 
                 musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[365]);
-                musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[1623]);      
+                musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[1623]);
+                musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[410]);
+                musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[1884]);
+                musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[1909]);
 
                 musicasFavoritasKelvin.ExibirMusicasFavoritas();
+
+                musicasFavoritasKelvin.GerarArquivoJson();
 
             }
             catch (Exception ex)
