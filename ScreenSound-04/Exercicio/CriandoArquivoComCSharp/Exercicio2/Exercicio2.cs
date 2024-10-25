@@ -22,19 +22,5 @@ namespace ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio2
             pessoa.ExibirInformacoesPessoa();
 
         }
-
-
-    }
-    internal class Pessoa
-    {
-        public string? Nome { get; set; }
-        public int Idade { get; set; }
-        public string? Email { get; set; }
-
-        public void ExibirInformacoesPessoa()
-        {
-            Console.WriteLine($"Nome: {Nome}\nIdade: {Idade}\nEmail: {Email}");
-        }
-
     }
 }

@@ -19,10 +19,7 @@ namespace ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio1
             Console.Write("Digite seu e-mail: ");
             string email = Console.ReadLine()!;
 
-            Pessoa pessoa = new Pessoa();
-            pessoa.Nome = nome;
-            pessoa.Idade = idade;
-            pessoa.Email = email;
+            Pessoa pessoa = new Pessoa(nome, idade, email);
 
             string json = JsonSerializer.Serialize(pessoa);
 
@@ -32,13 +29,5 @@ namespace ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio1
 
             Console.WriteLine("Criado arquivo com sucesso. " + Path.GetFileName(caminhoArquivo));
         }    
-    }
-
-    internal class Pessoa
-    {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
-        public string Email { get; set; }
-
     }
 }

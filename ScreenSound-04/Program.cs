@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio1;
 using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio2;
+using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio3;
 using ScreenSound_04.Exercicio.Linq.Exercicio4;
 using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4;
 using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos;
@@ -25,7 +26,8 @@ public class Program
         //Exercicio4.Exercicio();
         
         //Exercicio1.Executar();
-        Exercicio2.Executar();
+        //Exercicio2.Executar();
+        new Exercicio3().Executar();
 
         //await APIMusicas();
 
