@@ -1,10 +1,5 @@
 ﻿using System.Text.Json;
-using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio1;
-using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio2;
-using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio3;
-using ScreenSound_04.Exercicio.Linq.Exercicio4;
-using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4;
-using ScreenSound_04.Exercicio.LinqEOrdenacao.Exercicio4.Modelos;
+using ScreenSound_04.Exercicio.CriandoArquivoComCSharp.Exercicio4;
 using ScreenSound_04.Filtros;
 using ScreenSound_04.Modelos;
 
@@ -27,7 +22,8 @@ public class Program
         
         //Exercicio1.Executar();
         //Exercicio2.Executar();
-        new Exercicio3().Executar();
+        //new Exercicio3().Executar();
+        Exercicio4.Executar();
 
         //await APIMusicas();
 

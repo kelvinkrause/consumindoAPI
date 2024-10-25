@@ -16,7 +16,7 @@ namespace ScreenSound_04.Exercicio.CriandoArquivoComCSharp
 
         public void ExibirInformacoesPessoa()
         {
-            Console.WriteLine($"Nome: {Nome}\nIdade: {Idade}\nEmail: {Email}");
+            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}, Email: {Email}");
         }
     }
 }
