@@ -16,6 +16,7 @@ public class Musica
     public string? Genero { get; set; }
     [JsonPropertyName("year")]  
     public string? Ano { get; set; }  
+    [JsonPropertyName("key")]
     public int Key { get; set; }
 
     public string Tonalidades 

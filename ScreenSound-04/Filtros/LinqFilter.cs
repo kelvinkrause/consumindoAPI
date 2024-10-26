@@ -52,4 +52,15 @@ public class LinqFilter
         }
     }
 
+    public static void FiltrarMusicasEmCSharp(List<Musica> musicas)
+    {
+        Console.WriteLine("Musicas Tonalidade -> C#");
+        musicas
+            .Where(musica => musica.Tonalidades.Equals("C#"))
+            .Select(musica => musica.Nome)
+            .Distinct()
+            .ToList()
+            .ForEach(musica => Console.WriteLine($" - {musica}"));
+    }
+
 }

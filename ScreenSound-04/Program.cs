@@ -55,7 +55,8 @@ public class Program
                 //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "Dance/Electronic");
                 //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
                 //LinqFilter.FiltrarTodasAsMusicasPorAno(musicas, "2010");
-                LinqFilter.FiltrarMusicasDeUmArtistaComIndice(musicas, "Arctic Monkeys");
+                //LinqFilter.FiltrarMusicasDeUmArtistaComIndice(musicas, "Arctic Monkeys");
+                LinqFilter.FiltrarMusicasEmCSharp(musicas);
 
                 var musicasFavoritasKelvin = new MusicasFavoritas("Kelvin");
 
@@ -67,7 +68,7 @@ public class Program
 
                 //musicasFavoritasKelvin.ExibirMusicasFavoritas();
 
-                musicas[400].ExibeInformacoesMusica();
+                //musicas[400].ExibeInformacoesMusica();
 
                 //musicasFavoritasKelvin.GerarArquivoJson();
                 //musicasFavoritasKelvin.GerarArquivoJsonComStream();
