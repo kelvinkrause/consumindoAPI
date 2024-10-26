@@ -56,7 +56,7 @@ public class Program
                 //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Chris Brown");
                 //LinqFilter.FiltrarTodasAsMusicasPorAno(musicas, "2010");
                 //LinqFilter.FiltrarMusicasDeUmArtistaComIndice(musicas, "Arctic Monkeys");
-                LinqFilter.FiltrarMusicasEmCSharp(musicas);
+                //LinqFilter.FiltrarMusicasEmCSharp(musicas);
 
                 var musicasFavoritasKelvin = new MusicasFavoritas("Kelvin");
 
