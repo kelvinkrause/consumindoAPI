@@ -28,9 +28,9 @@ public class Program
         //Exercicio2.Executar();
         //new Exercicio3().Executar();
         //Exercicio4.Executar();
-        new Exercicio5().Executar();
+        //new Exercicio5().Executar();
 
-        //await APIMusicas();
+        await APIMusicas();
 
     }
 
@@ -65,9 +65,11 @@ public class Program
                 musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[1884]);
                 musicasFavoritasKelvin.AdicionarMusicasFavoritas(musicas[1909]);
 
-                musicasFavoritasKelvin.ExibirMusicasFavoritas();
+                //musicasFavoritasKelvin.ExibirMusicasFavoritas();
 
-                musicasFavoritasKelvin.GerarArquivoJson();
+                musicas[400].ExibeInformacoesMusica();
+
+                //musicasFavoritasKelvin.GerarArquivoJson();
                 //musicasFavoritasKelvin.GerarArquivoJsonComStream();
 
             }
